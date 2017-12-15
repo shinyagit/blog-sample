@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %meta{charset: 'utf-8'}
+    %meta{content: "ie=edge", http:{equiv: "x-ua-compatible"}}
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no'}
+    %meta{name: "format-detection", content: "telephone=no"}
+    %meta{content: 'タイトル', name: 'title'}
+    %meta{content: 'サイト説明', name: 'description'}
+    -# %meta{content: 'キーワード', name: 'keywords'}
+    %meta{property: 'og:type', content: 'website'}
+    %meta{property: 'og:image', content: ''}
+    %meta{property: 'og:title', content: ''}
+    %meta{property: 'og:description', content: ''}
+    %meta{property: 'og:url', content: ''}
+    %meta{property: 'og:site_name', content: ''}
+    %meta{property: 'og:locale', content: 'ja_JP'}
+    -# %meta{property: 'fb:admins', content: ''}
+    -# %meta{property: 'fb:app_id', content: ''}
+    -# %meta{content: 'summary' name: 'twitter:card'}
+    -# %meta{content: '@twitter_acount' name: 'twitter:site'}
+    %title= current_page.data.title + ' | サイト名' || 'サイト名'
+    -# import css files
+    = stylesheet_link_tag 'reset'
+    = stylesheet_link_tag 'site'
+    -# import javascript files
+    = javascript_include_tag 'site'
+    -# favicon の一括生成はこちらから https://ao-system.net/favicon/
+    -# html to haml http://htmltohaml.com/
+  %body
+    = yield

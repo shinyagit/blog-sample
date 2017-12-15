@@ -1,0 +1,11 @@
+site_url: ''
+site_title: 'New Site'
+site_description: ''
+site_author: ''
+site_author_profile: ''
+site_author_image: ''
+reverse_title: true
+social_links:
+  twitter: 'https://twitter.com/'
+  github: 'https://github.com/'
+# google_analytics_account: 'XX-12345678-9'
